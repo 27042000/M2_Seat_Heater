@@ -1,1 +1,2 @@
-
+# INTRODUCTION 
+The heat control system is basically used to control the temperature of the car seat. When a user or the driver of the car sits on the car, the button sensor is activated. After that, the user gets to turn on the heater. The temperature sensor continues to monitor the temperature and sends analog values ​​to the microcontroller. The microcontroller processes the analog input of the temperature sensor and outputs the temperature value via serial communication. All the activities of the control system are done on a microcontroller called Atmega328
