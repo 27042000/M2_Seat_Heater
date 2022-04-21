@@ -15,6 +15,7 @@ The heat control system is basically used to control the temperature of the car 
 * The analaog value from pot is converted to digital depending on the given limits with respect to voltage in terms of temperature.
 * The output from this ADC in terms of PWM is shown in the oscilloscope.
 * The data in terms of temperature is transmitted with the help of USART and shown in the Serial Monitor
+* LED conected at the potentiometer terminal indicate change in resistance
  
 ### 4'W and 1'H
 ##### What 
