@@ -1,7 +1,8 @@
 ### Action
 | When Switch is ON | When Switches are OFF|
 | --- | --- | 
-| L_01 |  Is User able to login | 
+| L_01 | ![Switch is OFF](https://user-images.githubusercontent.com/101061728/164382619-94423252-ef3c-4eab-a54c-ca0b1b907027.PNG)
+ | 
 
 
 
