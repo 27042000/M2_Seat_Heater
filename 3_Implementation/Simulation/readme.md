@@ -1,8 +1,7 @@
-### Action
-| When Switch is ON | When Switches are OFF|
+### In Action
+| When Switches are ON | When Switches are OFF|
 | --- | --- | 
-| L_01 | ![Switch is OFF](https://user-images.githubusercontent.com/101061728/164382619-94423252-ef3c-4eab-a54c-ca0b1b907027.PNG)
- | 
+| ![Switch is ON](https://user-images.githubusercontent.com/101061728/164382845-e1910520-a630-45cc-ad37-7301fa4d08bc.PNG)| ![Switch is OFF](https://user-images.githubusercontent.com/101061728/164382619-94423252-ef3c-4eab-a54c-ca0b1b907027.PNG)| 
 
 
 
