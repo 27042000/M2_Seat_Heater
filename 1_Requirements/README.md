@@ -4,8 +4,8 @@
 | Test ID | Description |  I/P|  O/P|
 | --- | --- | --- | ---- | 
 | H_01 |  When both the Switches are open |Switch close|  Led Blink |
-| H_02| Universal Asynchronous Receiver Transmitter(USART) communication| data  | data |
-| H_03 | Temperature value received by microcontroller||  Serial Monitor |Tempreature value|
+| H_02| (USART) communication transfer the data| 22  | 22 |
+| H_03 | Temperature value received by microcontroller|   |Tempreature value|
 | H_04|Change in Potentiometer|5v| 33 degree|
 
 
