@@ -9,7 +9,8 @@
 
 | When Switches are ON | When Switches are OFF|
 | --- | --- |
-|![ckt design](https://user-images.githubusercontent.com/101061728/164390766-32f64462-ff8a-40a9-9688-3c644ea6f91e.PNG)| ![Switch is OFF](https://user-images.githubusercontent.com/101061728/164382619-94423252-ef3c-4eab-a54c-ca0b1b907027.PNG)| 
+|![Switch Opens](https://user-images.githubusercontent.com/101061728/164392574-4defa5d3-9070-42b2-bb5a-930af7595e72.PNG)|![Switch close](https://user-images.githubusercontent.com/101061728/164392604-fee42277-e364-45bf-aafc-a0782ea5302e.PNG)|
+
 
 
 
