@@ -27,4 +27,5 @@ Mostly in the summer season.
 It is used just work with one click on the sensor
 
 # Circuit Design
+![Switch is ON](https://user-images.githubusercontent.com/101061728/164382845-e1910520-a630-45cc-ad37-7301fa4d08bc.PNG)
 
