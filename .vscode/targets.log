@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# Make data base, printed on Fri Apr 22 14:32:08 2022
+# Make data base, printed on Sat Apr 23 02:00:31 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # automatic
 ?F = $(notdir $?)
 # environment
-CARBON_MEM_DISABLE = 1
+CARBON_MEM_DISABLE = C:\WinAVR-20100110\avr\include\1
 # makefile (from `makefile', line 6)
 SRC = main.c src/adc.c src/disp.c src/led.c src/pwm.c
 # makefile
@@ -35,7 +35,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile
-CURDIR := c:/Users/Mukesh Pasi/Desktop/HEATER/emb/M2_Seat_Heater
+CURDIR := c:/Users/Mukesh Pasi/Desktop/NEW/M2_Seat_Heater
 # default
 SHELL := C:/WinAVR-20100110/utils/bin/sh.exe
 # environment
@@ -61,7 +61,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-3e6f5cf5-879b-41fe-b445-0e83dec591ce-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-48089c66-5972-449b-b4d8-11c375fd28dc-sock
 # environment
 VSCODE_CWD = C:\Users\Mukesh Pasi\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -85,7 +85,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7620_FTADTUIBBTRDQNLA
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3440_FVDGISMXPOXFIPFO
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -165,8 +165,7 @@ PROMPT = $P$G
 # environment
 MFLAGS = -Rrqp
 # automatic
-*D = $(patsubst % 
-/,%,$(dir $*))
+*D = $(patsubst %/,%,$(dir $*))
 # environment
 SYSTEMROOT = C:\Windows
 # automatic
@@ -206,11 +205,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 7620
+VSCODE_PID = 3440
 # environment
 USERDOMAIN_ROAMINGPROFILE = MSI
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=9/130=7%
+# Load=98/1024=10%, Rehash=0, Collisions=9/124=7%
 
 # Pattern-specific Variable Values
 
@@ -218,7 +217,7 @@ USERDOMAIN_ROAMINGPROFILE = MSI
 
 # Directories
 
-# . (key c:/Users/Mukesh Pasi/Desktop/HEATER/emb/M2_Seat_Heater, mtime 1650613918): 15 files, no impossibilities.
+# . (key c:/Users/Mukesh Pasi/Desktop/NEW/M2_Seat_Heater, mtime 1650659426): 15 files, no impossibilities.
 # C:\WinAVR-20100110\bin (key C:/WinAVR-20100110/bin, mtime 1650485332): 75 files, no impossibilities.
 # C:\WinAVR-20100110\utils\bin (key C:/WinAVR-20100110/utils/bin, mtime 1650485338): 99 files, no impossibilities so far.
 
@@ -234,28 +233,11 @@ all: Build
 #  Phony target (prerequisite of .PHONY).
 #  Command-line target.
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: `'
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
-# automatic
-# @ := all
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := Build
-# automatic
-# | := 
-# automatic
-# < := Build
-# automatic
-# ^ := Build
-# automatic
-# ? := Build
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/17=18%
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  commands to execute (from `makefile', line 39):
 	$(CC) -g -Wall -Os -mmcu=atmega328 -DF_CPU=16000000UL $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 	
@@ -286,7 +268,7 @@ src/adc.c:
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-22 14:31:54
+#  Last modified 2022-04-23 02:00:26
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -294,9 +276,28 @@ makefile:
 
 Build:
 #  Implicit rule search has not been done.
-#  Last modified 2022-04-22 13:21:58
+#  Implicit/static pattern stem: `'
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := Build
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  commands to execute (from `makefile', line 43):
 	mkdir $(BUILD_DIR)
 	
@@ -366,6 +367,6 @@ doc:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Apr 22 14:32:08 2022
+# Finished Make data base on Sat Apr 23 02:00:31 2022
 
  

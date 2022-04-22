@@ -1,5 +1,6 @@
-make.exe --dry-run --keep-going --print-directory
-make.exe: Entering directory `c:/Users/Mukesh Pasi/Desktop/HEATER/emb/M2_Seat_Heater'
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory `c:/Users/Mukesh Pasi/Desktop/NEW/M2_Seat_Heater'
+mkdir Build
 avr-gcc.exe -g -Wall -Os -mmcu=atmega328 -DF_CPU=16000000UL -I inc main.c src/adc.c src/disp.c src/led.c src/pwm.c -o Build\heater.elf
-make.exe: Leaving directory `c:/Users/Mukesh Pasi/Desktop/HEATER/emb/M2_Seat_Heater'
+make.exe: Leaving directory `c:/Users/Mukesh Pasi/Desktop/NEW/M2_Seat_Heater'
  
