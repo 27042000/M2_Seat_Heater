@@ -1,2 +1,16 @@
-# INTRODUCTION 
-The heat control system is basically used to control the temperature of the car seat. When a user or the driver of the car sits on the car, the button sensor is activated. After that, the user gets to turn on the heater. The temperature sensor continues to monitor the temperature and sends analog values ​​to the microcontroller. The microcontroller processes the analog input of the temperature sensor and outputs the temperature value via serial communication. All the activities of the control system are done on a microcontroller called Atmega328
+
+# Test Plan
+### Table no: High Level test plan
+| Test ID | Description |  I/P|  O/P|
+| --- | --- | --- | ---- | 
+| H_01 |  When both the Switches are open |Switch close|  Led Blink |
+| H_02| (USART) communication transfer the data| 22  | 22 |
+| H_03 | Temperature value received by microcontroller|   |Tempreature value|
+| H_04|Change in Potentiometer|5v| 33 degree|
+
+
+### Table no : Low Level test plan
+| Test ID | Description | I/P|  O/P|
+| --- | --- | --- | ---- |
+| L_01 |  When only one switch is closer | switch one is closed| Led not blink|
+| L_02| When Potentiometer is set at 0|0v |0 degree|
