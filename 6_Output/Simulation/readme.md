@@ -14,6 +14,16 @@
 
 
 
+## At 20
+![at low volt(20)](https://user-images.githubusercontent.com/101061728/164603203-a652402f-2042-498b-b798-dfc3a142c008.PNG)
+
+## At 25
+![at 25](https://user-images.githubusercontent.com/101061728/164603193-6a0cbbe8-26f6-420b-9711-f0bf904f3524.PNG)t
+
+## At 33
+![At Max volt(33)](https://user-images.githubusercontent.com/101061728/164603206-82775a0d-dda9-4cf6-bf1c-e9fb126f631f.PNG)
+## USART Communication 
+![USART value](https://user-images.githubusercontent.com/101061728/164603209-ec017430-b87a-4596-ab17-95d7cc64592b.PNG)
 
 
 
@@ -21,7 +31,7 @@
 
 
 
-### (Digital input or Output) and Interrupt
-### ADC based sensor
-### One Communication Interface (UART or SPI or I2C)
-### Any other peripherals used (Timers, PWM etc.)
+
+
+
+
