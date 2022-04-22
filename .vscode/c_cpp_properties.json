@@ -5,6 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:\\WinAVR-20100110\\avr\\include"
+                "C:\\Users\\Mukesh Pasi\\Desktop\\HEATER\\M2_Seat_Heater\\3_Implementation\\inc"
             ],
             "defines": [
                 "_DEBUG",
@@ -14,7 +15,8 @@
             "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
             "cStandard": "gnu11",
             "cppStandard": "gnu++14",
-            "intelliSenseMode": "windows-gcc-x86"
+            "intelliSenseMode": "windows-gcc-x86",
+            "configurationProvider": "ms-vscode.makefile-tools"
         }
     ],
     "version": 4
