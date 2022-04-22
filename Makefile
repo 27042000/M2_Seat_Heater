@@ -1,69 +1,57 @@
-########################################################################
-####################### Makefile Template ##############################
-########################################################################
+PROJ_NAME = heater
 
-# Compiler settings - Can be customized.
-CC = gcc
-CXXFLAGS = -std=c11 -Wall
-LDFLAGS = 
+BUILD_DIR = Build
 
-# Makefile settings - Can be customized.
-APPNAME = Seat Heater
-EXT = .c
-SRCDIR = src
-OBJDIR = obj
+# All Source code files
+SRC = main.c\
+src/adc.c\
+src/disp.c\
+src/led.c\
+src/pwm.c
 
-############## Do not change anything from here downwards! #############
-SRC = $(wildcard $(SRCDIR)/*$(EXT))
-OBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)/%.o)
-DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
-# UNIX-based OS variables & settings
-RM = rm
-DELOBJ = $(OBJ)
-# Windows OS variables & settings
-DEL = del
-EXE = .exe
-WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
+# All header file paths
+INC = -I inc
 
-########################################################################
-####################### Targets beginning here #########################
-########################################################################
+# Find out the OS and configure the variables accordingly
+ifdef OS	# All configurations for Windwos OS
+# Correct the path based on OS
+   FixPath = $(subst /,\,$1)
+# Name of the compiler used
+   CC = avr-gcc.exe
+# Name of the elf to hex file converter used
+   AVR_OBJ_CPY = avr-objcopy.exe
+else #All configurations for Linux OS
+   ifeq ($(shell uname), Linux)
+# Correct the path based on OS
+      FixPath = $1				
+# Name of the compiler used
+	  CC = avr-gcc
+# Name of the elf to hex file converter used
+	  AVR_OBJ_CPY = avr-objcopy 
+   endif
+endif
 
-all: $(APPNAME)
+# Command to make to consider these names as targets and not as file names in folder
+.PHONY:all analysis clean doc
 
-# Builds the app
-$(APPNAME): $(OBJ)
-	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+all:$(BUILD_DIR)
+# Compile the code and generate the ELF file
+	$(CC) -g -Wall -Os -mmcu=atmega328 -DF_CPU=16000000UL $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
-# Creates the dependecy rules
-%.d: $(SRCDIR)/%$(EXT)
-	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+$(BUILD_DIR):
+# Create directory to store the built files
+	mkdir $(BUILD_DIR)
 
-# Includes all .h files
--include $(DEP)
 
-# Building rule for .o files and its .c/.cpp in combination with all .h
-$(OBJDIR)/%.o: $(SRCDIR)/%$(EXT)
-	$(CC) $(CXXFLAGS) -o $@ -c $<
+analysis: $(SRC)
+# Analyse the code using Cppcheck command line utility
+	cppcheck --enable=all $^
 
-################### Cleaning rules for Unix-based OS ###################
-# Cleans complete project
-.PHONY: clean
+doc:
+# Build the code code documentation using Doxygen command line utility
+	make -C documentation
+
 clean:
-	$(RM) $(DELOBJ) $(DEP) $(APPNAME)
-
-# Cleans only all files with the extension .d
-.PHONY: cleandep
-cleandep:
-	$(RM) $(DEP)
-
-#################### Cleaning rules for Windows OS #####################
-# Cleans complete project
-.PHONY: cleanw
-cleanw:
-	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
-
-# Cleans only all files with the extension .d
-.PHONY: cleandepw
-cleandepw:
-	$(DEL) $(DEP)
+# Remove all the build files and generated document files
+	rm -rf $(call FixPath,$(BUILD_DIR)/*)
+	make -C documentation clean
