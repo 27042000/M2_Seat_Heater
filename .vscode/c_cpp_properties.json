@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:\\WinAVR-20100110\\avr\\include"
-                "C:\\Users\\Mukesh Pasi\\Desktop\\HEATER\\M2_Seat_Heater\\3_Implementation\\inc"
+        
             ],
             "defines": [
                 "_DEBUG",
