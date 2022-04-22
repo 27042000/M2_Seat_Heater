@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "AVR",
+            "intelliSenseMode": "linux-gcc-x86",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "compilerPath": "C:\\Users\\Mukesh Pasi\\Desktop\\HEATER\\emb\\M2_Seat_Heater\\3_Implementation\\main.c",
+            "includePath": [
+                "C:\\Users\\Mukesh Pasi\\Desktop\\HEATER\\emb\\M2_Seat_Heater\\3_Implementation\\inc\\**",
+                "C:\\WinAVR-20100110\\avr\\include\\**"
+            ],
+            "compilerArgs": [
+                "-DF_CPU=16UL"
+            ]
+        },
+        {
+            "name": "linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/MinGW/bin/g++.exe",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x86",
+            "compilerArgs": [],
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
