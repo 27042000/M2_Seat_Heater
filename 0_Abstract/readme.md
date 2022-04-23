@@ -16,6 +16,18 @@ The heat control system is basically used to control the temperature of the car 
 * The output from this ADC in terms of PWM is shown in the oscilloscope.
 * The data in terms of temperature is transmitted with the help of USART and shown in the Serial Monitor
 * LED conected at the potentiometer terminal indicate change in resistance
+## HARDWARE
+
+*	Atmega 328
+*	Variable Resistor 1 kOhm
+* Pair of 100 ohm Resistors	* Pair Of Switch
+* CRO( To Show Temprature in Graph)
+* Serial Monitor (Actual Temprature Value)
+* LED(2)
+* 5v DC Supply	Pair of Probe (Measure Terminal Voltage)
+* GROUNDING
+
+
  
 ### 4'W and 1'H
 ##### What 
