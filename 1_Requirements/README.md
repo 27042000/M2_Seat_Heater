@@ -16,6 +16,15 @@ The heat control system is basically used to control the temperature of the car 
 * The output from this ADC in terms of PWM is shown in the oscilloscope.
 * The data in terms of temperature is transmitted with the help of USART and shown in the Serial Monitor
 * LED conected at the potentiometer terminal indicate change in resistance
+## Swot Analysis 
+#### Advanatge
+* Help in monitoring the temperature 
+* User friendly to use 
+* Driver can Identify the temperature of seat
+#### Disadvantage 
+* Need time to time update 
+* Potentiometer can show sometimes the error
+* 
 ## HARDWARE
 
 *	Atmega 328
