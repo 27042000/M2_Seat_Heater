@@ -70,7 +70,7 @@ It is used just work with one click on the sensor
 | H_01 |  When both the Switches are open |Switch close|  Led Blink |
 | H_02| (USART) communication transfer the data| 22  | 22 |
 | H_03 | Potentiometer is at mid volt|3.3v   |29|
-| H_04|Change in Potentiometer|5v| 33 degree| 
+| H_04|Potentiometer|5v| 33 degree| 
 
 
 ### Table no : Low Level test plan
